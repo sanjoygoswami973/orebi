@@ -1,10 +1,45 @@
-@media (min-width: 320px) and (max-width: 720px) {
+@media (min-width: 320px) and (max-width: 769px) {
+  /* =====================================================
+                  home_page code start
+  ======================================================== */
+  /* ==============================
+          common css start
+  ================================= */
   .container {
     width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
   }
 
+  .heading1 {
+    font-size: 45px;
+  }
+
+  .item_para_p {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #000000;
+  }
+
+  .item_para_span {
+    font-size: 28px;
+  }
+
+  .my_button {
+    padding: 16px 45px;
+  }
+
+  .heading2 {
+    font-size: 35px;
+  }
+  /* ==============================
+        common css end
+  ================================= */
+
+  /* ==============================
+        navber_part start
+  ================================= */
   header {
     background-color: red;
   }
@@ -16,7 +51,6 @@
 
   header .top .flex .logo {
     width: 100%;
-    background-color: yellow;
   }
 
   header .top .flex .menu {
@@ -31,6 +65,10 @@
     transition: all linear 0.4s;
   }
 
+  header .top .flex .menu li {
+    margin: 5px 0;
+  }
+
   header .top .flex label {
     position: absolute;
     right: 0;
@@ -39,11 +77,898 @@
 
   header .top .flex label {
     display: block;
+    cursor: pointer;
   }
 
   header .top .flex input:checked ~ .menu {
     opacity: 1;
     visibility: visible;
-    height: 95px;
+    height: 145px;
+    background: #f0f0f0;
   }
+
+  header .bottom {
+    padding: 20px 0;
+  }
+
+  header .bottom .flex {
+    justify-content: space-between;
+  }
+
+  header .bottom .left {
+    width: 26%;
+    justify-content: flex-start;
+  }
+
+  header .bottom .left p {
+    margin-left: 5px;
+  }
+
+  header .bottom .center {
+    width: 50%;
+  }
+
+  header .bottom .right {
+    width: 18%;
+    column-gap: 8px;
+  }
+
+  header .bottom .center .search_bar {
+    width: 90%;
+  }
+
+  header .bottom .center .search_bar input {
+    width: 80%;
+    padding: 14px 10px;
+  }
+
+  header .bottom .center .search_bar button {
+    width: 20%;
+  }
+  /* ==============================
+        navber_part end
+  ================================= */
+  /* ==============================
+          banner_part start
+  ================================= */
+  #banner_part .banner {
+    background: #f6f7f9;
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  #banner_part .banner .content {
+    width: 100%;
+  }
+
+  #banner_part .banner .content .left {
+    width: 10%;
+  }
+
+  #banner_part .banner .content .right {
+    width: 85%;
+  }
+
+  #banner_part .information {
+    column-gap: 15px;
+  }
+
+  #banner_part .information .item {
+    align-items: center;
+  }
+
+  #banner_part .information .item p {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  /* ==============================
+          banner_part end
+  ================================= */
+  /* ==============================
+          sales_part start
+  ================================= */
+  #sales_part {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  #sales_part .flex {
+    flex-direction: column;
+  }
+
+  #sales_part .left {
+    width: 100%;
+    padding-top: 315px;
+    padding-bottom: 72px;
+  }
+
+  #sales_part .right {
+    width: 100%;
+  }
+
+  #sales_part .right .top {
+    background: url(../images/sales_img2.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding: 40px 0;
+  }
+
+  #sales_part .right .bottom {
+    background: url(../images/sales_img3.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding: 40px 0;
+  }
+
+  #sales_part .left .text {
+    margin-left: 15px;
+  }
+
+  #sales_part .right .text {
+    margin-left: 15px;
+  }
+
+  /* ==============================
+          sales_part end
+  ================================= */
+  /* ==============================
+          new_part start
+  ================================= */
+  #new_part {
+    margin-bottom: 60px;
+  }
+
+  #new_part .flex {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  #new_part .product {
+    width: 100%;
+  }
+
+  #new_part .left_arrow {
+    z-index: 5;
+    top: 38%;
+  }
+
+  #new_part .right_arrow {
+    z-index: 5;
+    top: 38%;
+  }
+  /* ==============================
+          new_part end
+  ================================= */
+  /* ==============================
+        bestsellers_part end
+  ================================= */
+  #bestsellers_part {
+    margin-bottom: 60px;
+  }
+
+  #bestsellers_part .flex {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  #bestsellers_part .product {
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    margin-top: 35px;
+  }
+  /* ==============================
+        bestsellers_part end
+  ================================= */
+  /* ==============================
+          phone_part start
+  ================================= */
+  #phone_part {
+    margin-bottom: 50px;
+  }
+
+  #phone_part .main {
+    padding: 40px 0;
+  }
+
+  #phone_part .main .content p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: auto;
+    line-height: 25px;
+  }
+  /* ==============================
+          phone_part end
+  ================================= */
+  /* ==============================
+          Offers_part start
+  ================================= */
+  #Offers_part {
+    margin-bottom: 60px;
+  }
+
+  #Offers_part .flex {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  #Offers_part .product {
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    margin-top: 30px;
+  }
+  /* ==============================
+          Offers_part end
+  ================================= */
+  /* ==============================
+            footer start
+  ================================= */
+  footer .flex {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  footer .left {
+    width: 100%;
+    order: 2;
+  }
+
+  footer .right {
+    width: 100%;
+    margin-bottom: 30px;
+    order: 1;
+  }
+
+  footer .right .item a {
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  footer .right .item {
+    width: 55%;
+    order: 2;
+  }
+
+  footer .right .item:last-child {
+    text-align: start;
+    width: 40%;
+    order: 1;
+  }
+
+  footer .main {
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  footer .main .icon {
+    display: flex;
+  }
+
+  footer .main .icon i {
+    margin-right: 10px;
+  }
+
+  footer .main p {
+    padding-left: 15px;
+  }
+  /* ==============================
+            footer end
+  ================================= */
+  /* =====================================================
+                  home_page code end
+  ======================================================== */
+  /* =====================================================
+                  about_page code start
+  ======================================================== */
+  /* ==============================
+            about_part start
+  ================================= */
+  #about_part {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #about_part .tittle {
+    margin-bottom: 50px;
+  }
+
+  #about_part h3 {
+    font-size: 30px;
+  }
+
+  #about_part .main {
+    justify-content: flex-start;
+    column-gap: 0;
+    margin-bottom: 80px;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  #about_part .main .image {
+    width: 100%;
+  }
+
+  #about_part .main .image a {
+    padding: 15px 30px;
+    bottom: 0;
+  }
+
+  #about_part .flex {
+    margin-top: 50px;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+
+  #about_part .flex .item {
+    width: 100%;
+  }
+
+  /* ==============================
+            about_part end
+  ================================= */
+  /* =====================================================
+                  about_page code end
+  ======================================================== */
+  /* =====================================================
+                  shop_page code start
+  ======================================================== */
+  /* ==============================
+            product_part start
+  ================================= */
+  #Products_part {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  #Products_part .product_flex {
+    margin-top: 60px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  #Products_part .product_flex .label_top {
+    display: block;
+  }
+
+  #Products_part .left {
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    top: 30px;
+    background: #f0f0f0;
+    z-index: 10;
+    transform: translateX(-100%);
+    transition: all linear 0.4s;
+  }
+
+  #Products_part .product_flex input:checked + .left {
+    left: 100%;
+  }
+
+  #Products_part .right {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  #Products_part .right .top {
+    flex-direction: column;
+  }
+
+  #Products_part .right .top .t_left {
+    width: 100%;
+  }
+
+  #Products_part .right .top .t_right {
+    width: 100%;
+  }
+
+  #Products_part .right .top .t_right form {
+    flex-direction: column;
+  }
+
+  #Products_part .right .top .t_right form .one {
+    margin: 10px 0;
+  }
+
+  #Products_part .right .top .t_right form .one select {
+    margin-left: 0;
+    width: 238px;
+  }
+
+  #Products_part .right .top .t_right form .one:last-child select {
+    width: 238px;
+    margin-left: 14px;
+  }
+
+  #Products_part .right .center .flex {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  #Products_part .right .center .product {
+    width: 100%;
+  }
+
+  #Products_part .right .bottom {
+    font-size: 12px;
+  }
+
+  /* ==============================
+            product_part end
+  ================================= */
+
+  /* =====================================================
+                  shop_page code end
+  ======================================================== */
+  /* =====================================================
+                  cart_page code start
+  ======================================================== */
+  /* ==============================
+            cart_page start
+  ================================= */
+  #cart_part {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  #cart_part .tittle {
+    margin-bottom: 60px;
+  }
+
+  #cart_part .tittle h1 {
+    font-size: 39px;
+  }
+
+  #cart_part .main {
+    flex-wrap: wrap;
+  }
+
+  #cart_part .main .item {
+    width: 50%;
+  }
+
+  #cart_part .main .item .top {
+    padding: 20px 0 20px 20px;
+  }
+
+  #cart_part .main .item .bottom {
+    flex-direction: column;
+    padding: 35px 20px;
+    align-items: flex-start;
+  }
+
+  #cart_part .main .item:first-child .bottom {
+    padding: 20px 5px;
+  }
+
+  #cart_part .main .item:nth-child(2) .bottom {
+    padding: 66px 0;
+    margin-left: 20px;
+  }
+
+  #cart_part .main .item:nth-child(3) .bottom {
+    padding: 35px 15px;
+  }
+
+  #cart_part .main .item .bottom h5 {
+    font-size: 14px;
+  }
+
+  #cart_part .main .item:nth-child(3) .bottom h5 {
+    padding: 5px 15px;
+  }
+
+  #cart_part .main .item .bottom .product {
+    margin-right: 15px;
+  }
+
+  #cart_part .main .item .bottom .product i {
+    display: none;
+  }
+
+  #cart_part .flex {
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  #cart_part .flex .select select {
+    padding: 10px 15px;
+    width: 160px;
+    margin-right: 15px;
+  }
+
+  #cart_part .total_main .left {
+    display: none;
+  }
+
+  #cart_part .total_main .right {
+    width: 100%;
+  }
+
+  /* ==============================
+            cart_page end
+  ================================= */
+  /* =====================================================
+                  cart_page code end
+  ======================================================== */
+  /* =====================================================
+                  account_page code start
+  ======================================================== */
+  /* ==============================
+          account_page start
+  ================================= */
+  #account_part {
+    margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  #account_part .tittle {
+    margin-bottom: 50px;
+  }
+
+  #account_part .tittle h1 {
+    font-size: 40px;
+  }
+
+  #account_part .main .left {
+    width: 32%;
+  }
+
+  #account_part .main .right {
+    width: 68%;
+  }
+
+  #account_part .main .right p {
+    font-size: 14px;
+    width: auto;
+  }
+
+  /* ==============================
+          account_page end
+  ================================= */
+  /* =====================================================
+                  account_page code end
+  ======================================================== */
+  /* =====================================================
+                  checkout_page code start
+  ======================================================== */
+  /* ==============================
+          account_page start
+  ================================= */
+  #checkout_part {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  #checkout_part .tittle {
+    margin-bottom: 40px;
+  }
+
+  #checkout_part .tittle h1 {
+    font-size: 40px;
+  }
+
+  #checkout_part .billing {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  #checkout_part .billing h2 {
+    font-size: 33px;
+    margin-bottom: 35px;
+  }
+
+  #checkout_part .billing .flex {
+    flex-direction: column;
+  }
+
+  #checkout_part .billing .flex .one {
+    width: auto;
+  }
+
+  #checkout_part .information {
+    margin-top: 50px;
+  }
+
+  #checkout_part .information h2 {
+    font-size: 35px;
+  }
+
+  #checkout_part .information h5 {
+    margin-top: 25px;
+  }
+
+  #checkout_part .main .order {
+    width: auto;
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+
+  #checkout_part .main .order h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  #checkout_part .main .order h4 {
+    padding: 17px 7px 14px;
+    box-sizing: border-box;
+  }
+
+  #checkout_part .main .order p {
+    box-sizing: border-box;
+  }
+
+  #checkout_part .main .bank {
+    padding: 20px 15px;
+    width: auto;
+    box-sizing: border-box;
+  }
+  /* ==============================
+          account_page end
+  ================================= */
+  /* =====================================================
+                  checkout_page code end
+  ======================================================== */
+  /* =====================================================
+                  contact_page code start
+  ======================================================== */
+  /* ==============================
+          contact_part start
+  ================================= */
+  #contacts_part {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  #contacts_part .tittle {
+    margin-bottom: 50px;
+  }
+
+  #contacts_part .tittle h1 {
+    font-size: 45px;
+  }
+
+  #contacts_part .main {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  #contacts_part .main h3 {
+    font-size: 34px;
+  }
+
+  #contacts_part .map .office {
+    width: auto;
+    left: 0;
+  }
+
+  #contacts_part .map:hover .office {
+    left: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+  /* ==============================
+          contact_part end
+  ================================= */
+  /* =====================================================
+                  contact_page code end
+  ======================================================== */
+}
+
+@media (min-width: 770px) and (max-width: 1603px) {
+  /* =====================================================
+                  home_page code start
+  ======================================================== */
+  /* ==============================
+            common css start
+  ================================= */
+  .container {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .item_para_span {
+    font-size: 35px;
+  }
+
+  header .top .menu ul {
+    justify-content: flex-end;
+  }
+  /* ==============================
+            common css end
+  ================================= */
+  /* ==============================
+            banner_part start
+  ================================= */
+
+  #banner_part .banner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #banner_part .banner .content {
+    width: 100%;
+  }
+
+  #banner_part .banner .content .left {
+    width: 10%;
+    text-align: center;
+  }
+
+  #banner_part .banner .content .right {
+    width: 85%;
+  }
+  /* ==============================
+            banner_part end
+  ================================= */
+  /* ==============================
+            sales_part start
+  ================================= */
+  #sales_part .left .text {
+    margin-left: 20px;
+  }
+
+  #sales_part .right .text {
+    margin-left: 20px;
+  }
+  /* ==============================
+            sales_part end
+  ================================= */
+  /* ==============================
+            phone_part start
+  ================================= */
+  #phone_part .main {
+    padding: 60px 0;
+  }
+
+  #phone_part .main .content {
+    width: 513px;
+    margin: 0 auto;
+  }
+  /* ==============================
+            phone_part end
+  ================================= */
+  /* =====================================================
+                  home_page code end
+  ======================================================== */
+  /* =====================================================
+                  about_page code start
+  ======================================================== */
+  /* ==============================
+            about_part start
+  ================================= */
+  #about_part {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  #about_part .tittle {
+    margin-bottom: 80px;
+  }
+
+  #about_part .main .image a {
+    padding: 20px 40px;
+    bottom: 0px;
+  }
+
+  #about_part .main {
+    margin-bottom: 80px;
+  }
+
+  #about_part .flex {
+    margin-top: 70px;
+  }
+  /* ==============================
+            about_part end
+  ================================= */
+  /* =====================================================
+                  about_page code end
+  ======================================================== */
+  /* =====================================================
+                  shop_page code start
+  ======================================================== */
+  /* ==============================
+          product_part start
+  ================================= */
+  #Products_part {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  #Products_part .flex {
+    margin-top: 60px;
+  }
+
+  #Products_part .right .top .t_left {
+    width: 20%;
+  }
+
+  #Products_part .right .top .t_right {
+    width: 80%;
+  }
+
+  #Products_part .right .top .t_left img {
+    margin-right: 10px;
+  }
+
+  #Products_part .right .top .t_left img:last-child {
+    margin-right: 0;
+  }
+
+  #Products_part .right .top .t_right form .one {
+    margin: 0 15px;
+  }
+
+  #Products_part .right .top .t_right form .one select {
+    width: auto;
+  }
+  /* ==============================
+          product_part end
+  ================================= */
+  /* =====================================================
+                  shop_page code end
+  ======================================================== */
+  /* =====================================================
+                  account_page code start
+  ======================================================== */
+  /* ==============================
+          account_part start
+  ================================= */
+  #account_part {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+
+  #account_part .tittle {
+    margin-bottom: 80px;
+  }
+
+  #account_part .main .right p {
+    width: auto;
+  }
+  /* ==============================
+          account_part end
+  ================================= */
+  /* =====================================================
+                  account_page code end
+  ======================================================== */
+
+  /* =====================================================
+                  checkout_page code end
+  ======================================================== */
+  /* ==============================
+          checkout_part start
+  ================================= */
+  #checkout_part {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  #checkout_part .tittle {
+    margin-bottom: 80px;
+  }
+
+  #checkout_part .billing {
+    margin-top: 80px;
+  }
+
+  #checkout_part .information {
+    margin-top: 80px;
+  }
+
+  #checkout_part .main .order {
+    margin-top: 0;
+  }
+
+  #checkout_part .main .bank {
+    width: auto;
+  }
+  /* ==============================
+          checkout_part end
+  ================================= */
+  /* =====================================================
+                  checkout_page code end
+  ======================================================== */
 }
